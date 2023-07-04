@@ -1,0 +1,46 @@
+$color: #4e86f7; // 主题色
+$grayFont: #686b7399;
+$bold: 1px solid #f0f0f0;
+
+.flexJz {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.zzc {
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+	width: 100vw;
+	height: 100vh;
+	//background: #000;
+	z-index: 998;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexComm($jz: space-between, $ai: center) {
+	display: flex;
+	justify-content: $jz;
+	align-items: $ai;
+}
+
+@mixin textOverflow($lineNum: 1) {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $lineNum;
+	text-overflow: ellipsis;
+}
+
+@mixin addSafeHeight($height: 100rpx) {
+	height: calc(#{$height} + env(safe-area-inset-bottom));
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+@mixin addSafepb($height: 100rpx) {
+	padding-bottom: calc(#{$height} + 20rpx + env(safe-area-inset-bottom));
+}

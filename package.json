@@ -1,15 +1,26 @@
 {
-  "name": "todolist",
+  "name": "canteen",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vant/weapp": "^1.10.19",
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "echarts": "^5.4.2",
+    "element-ui": "^2.15.13",
+    "nanoid": "^4.0.2",
+    "pubsub-js": "^1.9.4",
+    "pubsub.js": "^1.5.2",
+    "vant": "^2.12.54",
+    "vue": "^2.6.14",
+    "vue-router": "^3.6.5",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -17,8 +28,10 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "babel-plugin-import": "^1.13.6",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "postcss-px-to-viewport": "^1.1.1",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
